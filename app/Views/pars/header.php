@@ -10,25 +10,22 @@
   <meta name="keywords" content="ertepapat.com, erte papat lebuawu , sekawan lebuawu" />
   <meta name="author" content="pengenngoding.com" />
   <!-- Favicon icon -->
-  <link rel="icon" href="assets/images/logo2.png" type="image/x-icon">
+  <link rel="icon" href="<?= base_url() ?>/assets/images/logo2.png" type="image/x-icon">
   <!-- Google font-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-  <!-- waves.css -->
-  <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
   <!-- Required Fremwork -->
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
-  <!-- waves.css -->
-  <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/icon/font-awesome/css/font-awesome.min.css">
   <!-- themify icon -->
-  <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/icon/themify-icons/themify-icons.css">
   <!-- ICOFONT -->
-  <link rel="stylesheet" type="text/css" href="assets/icofont/icofont.min.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/icofont/icofont.min.css">
   <!-- scrollbar.css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
-  <!-- am chart export.css -->
-  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/jquery.mCustomScrollbar.css">
+  <!-- datatable -->
+  <link rel="stylesheet" href="<?= base_url() ?>/assets/css/data-table/jquery.dataTables.min.css">
   <!-- Style.css -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/mycss.css">
 </head>

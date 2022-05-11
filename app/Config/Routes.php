@@ -34,12 +34,12 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 /* Mutasi penduduk */
-$routes->get('/kartu-keluarga', 'kependudukan::kartuKeluarga');
-$routes->get('/kartu-keluarga/(:any)', 'kependudukan::kartuKeluarga/$1');
+$routes->get('/data-warga', 'kependudukan::dataWarga');
+$routes->get('/data-warga/(:any)', 'kependudukan::dataWarga/$1');
 
 /* Mutasi penduduk */
-$routes->get('/mutasi', 'domisili::mutasi');
-$routes->get('/mutasi/(:any)', 'domisili::mutasi/$1');
+$routes->get('/data-domisili', 'mutasi::dataDomisili');
+$routes->get('/data-domisili/(:any)', 'mutasi::dataDomisili/$1');
 
 
 

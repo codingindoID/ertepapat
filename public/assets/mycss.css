@@ -1,0 +1,51 @@
+/* HOME */
+.ch {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.ch:hover {
+    height: 102%;
+    width: 102%;
+}
+
+.ch-danger {
+    background-color: rgba(218, 0, 0, 0.701);
+}
+
+.ch-danger>* {
+    color: white;
+}
+
+.ch-primary {
+    background-color: rgba(27, 0, 234, 0.701);
+}
+
+.ch-primary>* {
+    color: white;
+}
+
+.ch-warning {
+    background-color: rgba(234, 137, 0, 0.701);
+}
+
+.ch-warning>* {
+    color: white;
+}
+
+/* END HOME */
+
+.custom-table {
+    width: 100%;
+}
+
+.custom-table>thead>tr>th {
+    padding: 5px !important;
+}
+
+.custom-table>tbody>tr>td {
+    padding: 5px !important;
+}

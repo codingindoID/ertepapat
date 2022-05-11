@@ -6,7 +6,7 @@
             </a>
             <a href="#">
                 <!-- <p class="font-weight-bold text-center">ERTEPAPAT</p> -->
-                <img class="img-fluid" src="assets/images/logo2.png" alt="Theme-Logo" />
+                <img class="img-fluid" src="<?= base_url() ?>/assets/images/logo2.png" alt="Theme-Logo" />
             </a>
             <a class="mobile-options waves-effect waves-light">
                 <i class="ti-more"></i>
@@ -27,7 +27,7 @@
             <ul class="nav-right">
                 <li class="user-profile header-notification">
                     <a href="#!" class="waves-effect waves-light">
-                        <img src="assets/images/logo2.png" class="img-radius" alt="User-Profile-Image">
+                        <img src="<?= base_url() ?>/assets/images/logo2.png" class="img-radius" alt="User-Profile-Image">
                         <span>admin</span>
                         <i class="ti-angle-down"></i>
                     </a>

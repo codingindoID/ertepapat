@@ -1,7 +1,7 @@
 "use strict";
-$(document).ready(function() {
+$(document).ready(function () {
     // card js start
-    $(".card-header-right .close-card").on('click', function() {
+    $(".card-header-right .close-card").on('click', function () {
         var $this = $(this);
         $this.parents('.card').animate({
             'opacity': '0',
@@ -9,20 +9,20 @@ $(document).ready(function() {
             'transform': 'scale3d(.3, .3, .3)'
         });
 
-        setTimeout(function() {
+        setTimeout(function () {
             $this.parents('.card').remove();
         }, 800);
     });
-    $(".card-header-right .reload-card").on('click', function() {
+    $(".card-header-right .reload-card").on('click', function () {
         var $this = $(this);
         $this.parents('.card').addClass("card-load");
         $this.parents('.card').append('<div class="card-loader"><i class="fa fa-spinner rotate-refresh"></div>');
-        setTimeout(function() {
+        setTimeout(function () {
             $this.parents('.card').children(".card-loader").remove();
             $this.parents('.card').removeClass("card-load");
         }, 3000);
     });
-    $(".card-header-right .card-option .open-card-option").on('click', function() {
+    $(".card-header-right .card-option .open-card-option").on('click', function () {
         var $this = $(this);
         if ($this.hasClass('fa-times')) {
             $this.parents('.card-option').animate({
@@ -38,40 +38,40 @@ $(document).ready(function() {
             $(this).removeClass("fa-wrench").fadeIn('slow');
         }
     });
-    $(".card-header-right .minimize-card").on('click', function() {
+    $(".card-header-right .minimize-card").on('click', function () {
         var $this = $(this);
         var port = $($this.parents('.card'));
         var card = $(port).children('.card-block').slideToggle();
         $(this).toggleClass("fa-minus").fadeIn('slow');
         $(this).toggleClass("fa-plus").fadeIn('slow');
     });
-    $(".card-header-right .full-card").on('click', function() {
+    $(".card-header-right .full-card").on('click', function () {
         var $this = $(this);
         var port = $($this.parents('.card'));
         port.toggleClass("full-card");
         $(this).toggleClass("fa-window-restore");
     });
 
-    $(".card-header-right .icofont-spinner-alt-5").on('mouseenter mouseleave', function() {
+    $(".card-header-right .icofont-spinner-alt-5").on('mouseenter mouseleave', function () {
         $(this).toggleClass("rotate-refresh").fadeIn('slow');
     });
-    $("#more-details").on('click', function() {
+    $("#more-details").on('click', function () {
         $(".more-details").slideToggle(500);
     });
-    $(".mobile-options").on('click', function() {
+    $(".mobile-options").on('click', function () {
         $(".navbar-container .nav-right").slideToggle('slow');
     });
-    $(".search-btn").on('click', function() {
+    $(".search-btn").on('click', function () {
         $(".main-search").addClass('open');
         $('.main-search .form-control').animate({
             'width': '200px',
         });
     });
-    $(".search-close").on('click', function() {
+    $(".search-close").on('click', function () {
         $('.main-search .form-control').animate({
             'width': '0',
         });
-        setTimeout(function() {
+        setTimeout(function () {
             $(".main-search").removeClass('open');
         }, 300);
     });
@@ -81,15 +81,15 @@ $(document).ready(function() {
     //
     // });
 
-    $(document).ready(function(){
-        $(".header-notification").click(function(){
+    $(document).ready(function () {
+        $(".header-notification").click(function () {
             $(this).find(".show-notification").slideToggle(500);
             $(this).toggleClass('active');
         });
     });
-    $(document).on("click", function(event){
+    $(document).on("click", function (event) {
         var $trigger = $(".header-notification");
-        if($trigger !== event.target && !$trigger.has(event.target).length){
+        if ($trigger !== event.target && !$trigger.has(event.target).length) {
             $(".show-notification").slideUp(300);
             $(".header-notification").removeClass('active');
         }
@@ -99,7 +99,7 @@ $(document).ready(function() {
     $.mCustomScrollbar.defaults.axis = "yx";
     $("#styleSelector .style-cont").slimScroll({
         setTop: "1px",
-        height:"calc(100vh - 520px)",
+        height: "calc(100vh - 520px)",
     });
     $(".main-menu").mCustomScrollbar({
         setTop: "1px",
@@ -116,16 +116,16 @@ $(document).ready(function() {
     });
 
     // search
-    $("#search-friends").on("keyup", function() {
+    $("#search-friends").on("keyup", function () {
         var g = $(this).val().toLowerCase();
-        $(".userlist-box .media-body .chat-header").each(function() {
+        $(".userlist-box .media-body .chat-header").each(function () {
             var s = $(this).text().toLowerCase();
             $(this).closest('.userlist-box')[s.indexOf(g) !== -1 ? 'show' : 'hide']();
         });
     });
 
     // open chat box
-    $('.displayChatbox').on('click', function() {
+    $('.displayChatbox').on('click', function () {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
             var options = {
@@ -140,7 +140,7 @@ $(document).ready(function() {
     });
 
     //open friend chat
-    $('.userlist-box').on('click', function() {
+    $('.userlist-box').on('click', function () {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
             var options = {
@@ -154,7 +154,7 @@ $(document).ready(function() {
         $('.showChat_inner').toggle('slide', options, 500);
     });
     //back to main chatbar
-    $('.back_chatBox').on('click', function() {
+    $('.back_chatBox').on('click', function () {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
             var options = {
@@ -168,7 +168,7 @@ $(document).ready(function() {
         $('.showChat_inner').toggle('slide', options, 500);
         $('.showChat').css('display', 'block');
     });
-    $('.back_friendlist').on('click', function() {
+    $('.back_friendlist').on('click', function () {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
             var options = {
@@ -186,18 +186,12 @@ $(document).ready(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    // wave effect js
-    Waves.init();
-    Waves.attach('.flat-buttons', ['waves-button']);
-    Waves.attach('.float-buttons', ['waves-button', 'waves-float']);
-    Waves.attach('.float-button-light', ['waves-button', 'waves-float', 'waves-light']);
-    Waves.attach('.flat-buttons', ['waves-button', 'waves-float', 'waves-light', 'flat-buttons']);
 });
-$(document).ready(function() {
+$(document).ready(function () {
     $(".theme-loader").animate({
         opacity: "0"
-    },1000);
-    setTimeout(function() {
+    }, 1000);
+    setTimeout(function () {
         $(".theme-loader").remove();
     }, 800);
 });
@@ -228,14 +222,14 @@ function toggleFullScreen() {
 
 $('body').append('' +
     '<div class="fixed-button">' +
-        '<a href="https://themeforest.net/item/mega-able-bootstrap-4-and-angular-5-admin-dashboard-template/20790784?ref=phoenixcoded" target="_blank" class="btn btn-md btn-primary">' +
-            '<i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro' +
-        '</a> ' +
+    '<a href="https://themeforest.net/item/mega-able-bootstrap-4-and-angular-5-admin-dashboard-template/20790784?ref=phoenixcoded" target="_blank" class="btn btn-md btn-primary">' +
+    '<i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro' +
+    '</a> ' +
     '</div>' +
-'');
+    '');
 var $window = $(window);
 var nav = $('.fixed-button');
-$window.scroll(function() {
+$window.scroll(function () {
     if ($window.scrollTop() >= 200) {
         nav.addClass('active');
     } else {
