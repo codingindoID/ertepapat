@@ -6,11 +6,12 @@ use CodeIgniter\Model;
 
 class ModelPenduduk extends Model
 {
+    protected $table = 'warga';
+    protected $primaryKey = 'id_warga';
+    protected $allowedFields = ['nama', 'nik', 'no_kk', 'alamat', 'pekerjaan', 'no_hp', 'kepala_keluarga', 'tempat_lahir', 'tanggal_lahir', 'jk'];
+
     function getWarga($id = null)
     {
-        if ($id) {
-            return $this->db->table('data_warga')->getWhere(['id_warga' => $id])->getResultArray();
-        }
-        return $this->db->table('data_warga')->get()->getResultArray();
+        return ($id) ? $this->find($id) : $this->findAll();
     }
 }

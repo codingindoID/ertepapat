@@ -12,7 +12,7 @@
   <!-- Favicon icon -->
   <link rel="icon" href="<?= base_url() ?>/assets/images/logo2.png" type="image/x-icon">
   <!-- Google font-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"> -->
   <!-- Required Fremwork -->
   <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->

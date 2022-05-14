@@ -33,9 +33,14 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-/* Mutasi penduduk */
+/* kependudukan */
 $routes->get('/data-warga', 'kependudukan::dataWarga');
 $routes->get('/data-warga/(:any)', 'kependudukan::dataWarga/$1');
+$routes->get('/delete-warga/(:any)', 'kependudukan::hapusWarga/$1');
+$routes->post('/simpan-warga', 'kependudukan::simpanWarga');
+$routes->post('/detail-warga', 'kependudukan::ajaxDetailWarga');
+
+$routes->get('/kartu-keluarga', 'kependudukan::dataKK');
 
 /* Mutasi penduduk */
 $routes->get('/data-domisili', 'mutasi::dataDomisili');
