@@ -41,6 +41,7 @@ $routes->post('/simpan-warga', 'kependudukan::simpanWarga');
 $routes->post('/detail-warga', 'kependudukan::ajaxDetailWarga');
 
 $routes->get('/kartu-keluarga', 'kependudukan::dataKK');
+$routes->get('/kartu-keluarga/(:any)', 'kependudukan::dataKK/$1');
 
 /* Mutasi penduduk */
 $routes->get('/data-domisili', 'mutasi::dataDomisili');

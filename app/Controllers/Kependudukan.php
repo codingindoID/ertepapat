@@ -36,8 +36,9 @@ class Kependudukan extends BaseController
     function hapusWarga($id)
     {
         $cek = $this->model->delete($id);
-        $page = redirect()->to('/data-warga');
-        return ($cek) ? $page->with('success', 'sukses hapus data') : $page->with('error', 'gagal hapus data');
+        if ($cek) {
+            echo json_encode('data terhapus');
+        }
     }
 
     function ajaxDetailWarga()
@@ -49,16 +50,18 @@ class Kependudukan extends BaseController
 
 
     /* KARTU KELUARGA */
-    function dataKK()
+    function dataKK($id = null)
     {
         $data = [
             'title'             => 'Data Kependudukan',
             'sub_title'         => 'data warga',
             'active'            => 'dataWarga',
             'icon'              => 'ti-user',
-            'warga'             => $this->model->getWarga(),
+            'no_kk'             => $this->model->getKepalaKeluarga($id),
+            'warga'             => $this->model->getKK($id),
         ];
         // dd($data);
-        return $this->template->render('kependudukan/kartuKeluarga', $data);
+        $page = ($id) ? 'kependudukan/anggota_keluarga' : 'kependudukan/kartu_keluarga';
+        return $this->template->render($page, $data);
     }
 }

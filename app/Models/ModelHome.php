@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class HomeModel extends Model
+class ModelHome extends Model
 {
     // protected $DBGroup          = 'default';
     protected $table            = 'warga';

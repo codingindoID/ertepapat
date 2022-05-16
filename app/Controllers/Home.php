@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-use App\Models\HomeModel;
+use App\Models\ModelHome;
 
 class Home extends BaseController
 {
     function __construct()
     {
-        $this->model = new HomeModel();
+        $this->model = new ModelHome();
     }
     public function index()
     {

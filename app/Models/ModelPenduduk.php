@@ -14,4 +14,16 @@ class ModelPenduduk extends Model
     {
         return ($id) ? $this->find($id) : $this->findAll();
     }
+
+    function getKepalaKeluarga($id)
+    {
+        return $this->db->table('warga')->getWhere(['kepala_keluarga' => 'Y', 'no_kk' => $id])->getRow();
+    }
+
+    function getKK($id)
+    {
+        $table = $this->db->table('warga');
+        $table = ($id) ? $table->getWhere(['no_kk' => $id]) : $table->getWhere(['kepala_keluarga' => 'Y']);
+        return $table->getResultArray();
+    }
 }

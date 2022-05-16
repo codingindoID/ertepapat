@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li class=" ">
-                        <a href="#" class="waves-effect waves-dark">
+                        <a href="/kartu-keluarga" class="waves-effect waves-dark">
                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                             <span class="pcoded-mtext">Kartu Keluarga</span>
                             <span class="pcoded-mcaret"></span>

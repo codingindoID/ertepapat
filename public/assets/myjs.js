@@ -1,16 +1,12 @@
-$(document).ready(function () {
-    const base_url = location.host;
-    const http = location.protocol;
+const base_url = location.host;
+const http = location.protocol;
 
+$(document).ready(function () {
     $('.data-table').DataTable();
 
     setTimeout(() => {
         $('.alert-notif').alert('close')
     }, 3000);
-
-    $('.btn-delete').on('click', function () {
-        confirm('Hapus data?');
-    });
 
     $('.detil-warga').on('click', function () {
         let id = $(this).data('id');
@@ -53,3 +49,21 @@ $(document).ready(function () {
         $('#modalPenduduk').modal('show');
     });
 });
+
+
+function deleteWarga(data) {
+    let id = $(data).data('id');
+    let res = confirm('Hapus Data?');
+    if (res) {
+        $.ajax({
+            type: "get",
+            url: `${http}//${base_url}/delete-warga/${id}`,
+            data: "data",
+            dataType: "json",
+            success: function (response) {
+                alert(response);
+                $(data).closest('tr').remove();
+            }
+        });
+    }
+}

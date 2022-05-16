@@ -35,8 +35,9 @@
                             <td><?= $var['no_hp'] ?></td>
                             <td class="text-center">
                                 <div class="btn-group btn-group-sm" role="group">
+                                    <!-- href="/delete-warga/<?= $var['id_warga'] ?>" -->
                                     <button type="button" class="btn btn-primary mr-2 detil-warga" data-id="<?= $var['id_warga'] ?>"><i class="icofont-edit"></i> Edit</button>
-                                    <a type="button" class="btn btn-danger text-white btn-delete" href="/delete-warga/<?= $var['id_warga'] ?>"><i class="icofont-trash"></i> Hapus</a>
+                                    <a type="button" class="btn btn-danger text-white" data-id="<?= $var['id_warga'] ?>" onclick="deleteWarga(this)"><i class="icofont-trash"></i> Hapus</a>
                                 </div>
                             </td>
                         </tr>
