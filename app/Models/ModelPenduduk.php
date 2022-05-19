@@ -6,6 +6,9 @@ use CodeIgniter\Model;
 
 class ModelPenduduk extends Model
 {
+    protected $table = 'data_warga';
+    // protected $allowedFields = 'data_warga';
+
     function getWarga($id = null)
     {
         if ($id) {

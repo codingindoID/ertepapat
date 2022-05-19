@@ -38,6 +38,7 @@
 
 /* END HOME */
 
+/* table */
 .custom-table {
     width: 100%;
 }
@@ -49,3 +50,13 @@
 .custom-table>tbody>tr>td {
     padding: 5px !important;
 }
+
+/* end table */
+
+/* modal */
+.modal-xl {
+    max-width: 1140px;
+    width: 100%;
+}
+
+/* end modal */
