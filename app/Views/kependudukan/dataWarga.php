@@ -1,12 +1,9 @@
 <div class="row">
     <div class="col-12 mb-3">
         <div class="btn-group" role="group" aria-label="Basic example">
-            <<<<<<< HEAD <button type="button" data-toggle="modal" data-target="#modalPenduduk" class="btn btn-primary"><i class="icofont-plus-circle"></i> Tambah Data</button>
-                =======
-                <button type="button" class="btn btn-primary tambah-penduduk"><i class="icofont-plus-circle"></i> Tambah Data</button>
-                >>>>>>> 783c07f3b7c12a7e7de59340f01cf772b45f3fcf
-                <button type="button" class="btn btn-info"><i class="icofont-print"></i> Cetak</button>
-                <button type="button" class="btn btn-success"><i class="icofont-print"></i> Excel</button>
+            <button type="button" data-toggle="modal" data-target="#modalPenduduk" class="btn btn-primary"><i class="icofont-plus-circle"></i> Tambah Data</button>
+            <button type="button" class="btn btn-info"><i class="icofont-print"></i> Cetak</button>
+            <button type="button" class="btn btn-success"><i class="icofont-print"></i> Excel</button>
         </div>
     </div>
     <div class="col-12">
