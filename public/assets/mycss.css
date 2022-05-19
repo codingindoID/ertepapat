@@ -1,3 +1,22 @@
+/* global */
+.modal-xl {
+    max-width: 1980px;
+    width: 95%;
+}
+
+label {
+    font-weight: bold;
+}
+
+.select-form-control {
+    width: 100%;
+    padding: 8px;
+    border-color: lightgray !important;
+    border-radius: 5px;
+}
+
+/* end global */
+
 /* HOME */
 .ch {
     text-align: center;
@@ -7,10 +26,15 @@
     transition: 0.5s;
 }
 
+.ch>h3 {
+    font-weight: bold;
+}
+
 .ch:hover {
     height: 102%;
     width: 102%;
 }
+
 
 .ch-danger {
     background-color: rgba(218, 0, 0, 0.701);

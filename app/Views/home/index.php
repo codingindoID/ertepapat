@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-4">
         <div class="ch ch-danger">
-            <h3>1678</h3>
+            <h3><?= $count['warga'] ?></h3>
             <p>Data Penduduk</p>
             <a href="/data-warga"><i class="icofont-search-folder"></i> Lihat Detil</a>
         </div>
