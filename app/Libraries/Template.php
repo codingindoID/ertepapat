@@ -6,8 +6,8 @@ class Template
 {
     public function render($view, $data = [])
     {
-        echo view('pars/template_atas', $data);
+        echo view('pars/tema_atas', $data);
         echo view($view, $data);
-        echo view('pars/template_bawah');
+        echo view('pars/tema_bawah');
     }
 }

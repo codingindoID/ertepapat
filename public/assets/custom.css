@@ -1,0 +1,17 @@
+.my-table {
+    width: 100%;
+}
+
+.my-table>thead>th {
+    padding: 5px;
+}
+
+.my-table>tbody>td {
+    padding: 5px;
+}
+
+.btn-back {
+    background-color: orange;
+    text-align: center;
+    color: white;
+}

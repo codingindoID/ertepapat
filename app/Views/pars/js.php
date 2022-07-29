@@ -1,17 +1,12 @@
-<!-- Required Jquery -->
-<script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery-ui/jquery-ui.min.js "></script>
-<script type="text/javascript" src="<?= base_url() ?>/assets/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>/assets/js/bootstrap/js/bootstrap.min.js "></script>
-<!-- jquery slimscroll js -->
-<script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
-<!-- slimscroll js -->
-<script type="text/javascript" src="<?= base_url() ?>/assets/js/SmoothScroll.js"></script>
-<script src="<?= base_url() ?>/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
-<!-- menu js -->
-<script src="<?= base_url() ?>/assets/js/pcoded.min.js"></script>
-<script src="<?= base_url() ?>/assets/js/vertical-layout.min.js "></script>
-<!-- datatable -->
-<script type="text/javascript" src="<?= base_url() ?>/assets/css/data-table/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="<?= base_url() ?>/assets/js/script.js "></script>
-<script type="text/javascript" src="<?= base_url() ?>/assets/myjs.js "></script>
+    <!-- jQuery -->
+    <script src="<?= base_url() ?>/assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="<?= base_url() ?>/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- datatable 4 -->
+    <script src="<?= base_url() ?>/assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url() ?>/assets/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Select2 -->
+    <script src="<?= base_url() ?>/assets/select2/js/select2.full.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="<?= base_url() ?>/assets/js/adminlte.min.js"></script>
+    <script src="<?= base_url() ?>/assets/custom.js"></script>

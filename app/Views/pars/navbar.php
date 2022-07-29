@@ -1,50 +1,58 @@
-<nav class="navbar header-navbar pcoded-header">
-    <div class="navbar-wrapper">
-        <div class="navbar-logo">
-            <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
-                <i class="ti-menu"></i>
-            </a>
-            <a href="#">
-                <!-- <p class="font-weight-bold text-center">ERTEPAPAT</p> -->
-                <img class="img-fluid" src="<?= base_url() ?>/assets/images/logo2.png" alt="Theme-Logo" />
-            </a>
-            <a class="mobile-options waves-effect waves-light">
-                <i class="ti-more"></i>
-            </a>
-        </div>
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="icofont-navigation-menu"></i></a>
+        </li>
+    </ul>
 
-        <div class="navbar-container container-fluid">
-            <ul class="nav-left">
-                <li>
-                    <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
-                </li>
-                <li>
-                    <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
-                        <i class="ti-fullscreen"></i>
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav-right">
-                <li class="user-profile header-notification">
-                    <a href="#!" class="waves-effect waves-light">
-                        <img src="<?= base_url() ?>/assets/images/logo2.png" class="img-radius" alt="User-Profile-Image">
-                        <span>admin</span>
-                        <i class="ti-angle-down"></i>
-                    </a>
-                    <ul class="show-notification profile-notification">
-                        <li class="waves-effect waves-light">
-                            <a href="#!">
-                                <i class="ti-settings"></i> Akun
-                            </a>
-                        </li>
-                        <li class="waves-effect waves-light">
-                            <a href="auth-normal-sign-in.html">
-                                <i class="ti-layout-sidebar-left"></i> Keluar
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+                <form class="form-inline">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-navbar" type="submit">
+                                <i class="icofont-search-2"></i>
+                            </button>
+                            <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                <i class="icofont-search-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </li>
+
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown mr-5">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+                <span class="font-weight-bold"><?= session()->get(DISPLAY) ?></span> <i class="icofont-user ml-2 text-light-purple border border-light p-2 rounded-circle"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <a href="<?= site_url('pengaturan') ?>" class="dropdown-item">
+                    <!-- Message Start -->
+                    <div class="media">
+                        <div class="media-body">
+                            <h3 class="dropdown-item-title">
+                                <i class="icofont-gears"></i>
+                                Setting Akun
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Message End -->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" onclick="logout()" class="dropdown-item dropdown-footer text-danger"><i class="icofont-sign-out"></i> LOGOUT</a>
+            </div>
+        </li>
+    </ul>
 </nav>
+<!-- /.navbar -->

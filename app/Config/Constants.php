@@ -82,3 +82,7 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 /* KONSTANTA */
 define('APPNAME', "ERTE PAPAT");
 define('SLOGAN', "SISTEM INFORMASINE WONG ERTE 4");
+
+/* SESSION */
+define('LEVEL', "ertepapat_level");
+define('DISPLAY', "ertepapat_display");
