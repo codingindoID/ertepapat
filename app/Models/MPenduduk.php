@@ -8,7 +8,7 @@ class MPenduduk extends Model
 {
     protected $table            = 'penduduk';
     protected $primaryKey       = 'id_penduduk';
-    protected $allowedFields    = ['nik', 'no_kk', 'nama_lengkap', 'tempat_lahir', 'tanggal_lahir', 'rt', 'rw', 'desa', 'kecamatan', 'alamat_lengkap', 'agama', 'status_kawin', 'pekerjaan', 'kewarganegaraan', 'jk', 'gol_darah', 'tanggal_diinput', 'tanggal_diipdate'];
+    protected $allowedFields    = ['nik', 'no_kk', 'nama_lengkap', 'tempat_lahir', 'tanggal_lahir', 'rt', 'rw', 'desa', 'kecamatan', 'alamat_lengkap', 'agama', 'status_kawin', 'pekerjaan', 'kewarganegaraan', 'jk', 'gol_darah', 'tanggal_diinput', 'tanggal_diupdate'];
 
     // Dates
     protected $useTimestamps = true;

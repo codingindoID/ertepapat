@@ -35,6 +35,7 @@ $routes->get('/', 'Home::index');
 
 // PENDUDUK
 $routes->get('/penduduk', 'penduduk::index');
+$routes->post('/penduduk', 'penduduk::submitPenduduk');
 $routes->get('/tambah-penduduk', 'penduduk::formTambahPenduduk');
 
 

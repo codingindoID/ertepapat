@@ -9,7 +9,7 @@ class Penduduk extends BaseController
 {
     public function __construct()
     {
-        $this->MPenduduk = new MPenduduk();
+        $this->modelPenduduk = new MPenduduk();
     }
     public function index()
     {
@@ -18,7 +18,7 @@ class Penduduk extends BaseController
             'title'     => 'Master',
             'sub'       => 'Penduduk',
             'icon'      => 'icofont-chart-histogram',
-            'rekap'     => $this->MPenduduk->findAll()
+            'rekap'     => $this->modelPenduduk->findAll()
         ];
 
         $this->template->render('penduduk/index', $data);
@@ -30,9 +30,17 @@ class Penduduk extends BaseController
             'active'    => 'penduduk',
             'title'     => 'Master',
             'sub'       => 'Form Tambah Penduduk',
-            'icon'      => 'icofont-paper'
+            'icon'      => 'icofont-paperclip'
         ];
 
         $this->template->render('penduduk/form-penduduk', $data);
+    }
+
+    function submitPenduduk()
+    {
+        $var = $this->request->getVar();
+        // dd($var);
+        $cek =  $this->modelPenduduk->save($var);
+        return redirect()->back()->with($cek ? 'success' : 'error', $cek ? 'Data Disimpan' : 'gagal');
     }
 }

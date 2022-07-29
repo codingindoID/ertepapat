@@ -25,14 +25,14 @@
         <tbody>
             <?php foreach ($rekap as $var) : ?>
                 <tr>
-                    <td>KK</td>
-                    <td>NIK</td>
-                    <td>Nama</td>
-                    <td>Jk</td>
-                    <td>TTL</td>
-                    <td>Agama</td>
-                    <td>Pekerjaan</td>
-                    <td>Gol Darah</td>
+                    <td><?= $var['no_kk'] ?></td>
+                    <td><?= $var['nik'] ?></td>
+                    <td><?= $var['nama_lengkap'] ?></td>
+                    <td><?= $var['jk'] ?></td>
+                    <td><?= $var['tempat_lahir'] ?> , <?= $var['tanggal_lahir'] ?></td>
+                    <td><?= $var['agama'] ?></td>
+                    <td><?= $var['pekerjaan'] ?></td>
+                    <td><?= $var['gol_darah'] ?></td>
                 </tr>
             <?php endforeach ?>
         </tbody>
